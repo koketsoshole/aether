@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07090b"><meta name="description" content="A living light in an infinite void. Move closer, feed its energy, and find your color.">
+<title>Aether — a living void</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="universe" aria-label="An interactive luminous particle. Move your pointer to attract it, or hold to grow it."></canvas>
+<div class="grain" aria-hidden="true"></div>
+<header><a class="wordmark" href="./" aria-label="Aether home"><span class="mark">✳</span> aether<span class="period">.</span></a><div class="edition">AN EXPERIMENT IN PRESENCE <span>001 — ∞</span></div><button id="pause" class="icon-button" aria-label="Pause animation" title="Pause animation">Ⅱ</button></header>
+<main><div class="intro"><div class="eyebrow"><i></i> A LIVING VOID</div><h1>Something from<br><em>nothing.</em></h1><p>A little light. An infinite space.<br>And you, somewhere in between.</p></div>
+<div class="specimen" aria-hidden="true"><span>ENTITY / 001</span><div class="fine-line"></div><span id="state">QUIETLY ALIVE</span></div>
+<div class="instructions"><span class="mouse-icon"></span><span>Move to attract <b>·</b> Hold to nurture <b>·</b> Release to bloom</span></div>
+<section class="controls" aria-label="Particle controls"><div class="palette-block"><div class="control-heading">CHOOSE YOUR FREQUENCY <span id="color-name">Glacier</span></div><div class="swatches"><button class="swatch selected" style="--swatch:#9debdc" data-color="#9debdc" data-name="Glacier" aria-label="Glacier mint" aria-pressed="true"></button><button class="swatch" style="--swatch:#b5afff" data-color="#b5afff" data-name="Nebula" aria-label="Nebula violet" aria-pressed="false"></button><button class="swatch" style="--swatch:#ffada1" data-color="#ffada1" data-name="Ember" aria-label="Ember coral" aria-pressed="false"></button><button class="swatch" style="--swatch:#f2d28e" data-color="#f2d28e" data-name="Solstice" aria-label="Solstice gold" aria-pressed="false"></button><button class="swatch" style="--swatch:#9dcaff" data-color="#9dcaff" data-name="Tidal" aria-label="Tidal blue" aria-pressed="false"></button><label class="custom" title="Choose a custom color"><span>+</span><input id="custom-color" type="color" value="#9debdc" aria-label="Custom particle color"></label></div></div><div class="divider"></div><div class="energy-block"><label class="control-heading" for="energy">AMBIENT ENERGY <span id="energy-value">40%</span></label><input id="energy" type="range" min="0" max="100" value="40"></div><button id="bloom" class="bloom-button">Send a pulse <span>↗</span></button></section>
+</main><footer><span>TAKE A BREATH. STAY A WHILE.</span><span class="status"><i></i> <span id="presence">Your presence changes everything</span></span><button id="reset">Begin again ↺</button></footer>
+<script src="app.js"></script>
+</body></html>
